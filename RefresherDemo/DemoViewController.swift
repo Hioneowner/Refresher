@@ -33,6 +33,7 @@ class DemoViewController: UIViewController ,UITableViewDataSource,UITableViewDel
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         view.addSubview(tableView)
         
+        //初始化Header
         initHeader()
         // Do any additional setup after loading the view.
     }
