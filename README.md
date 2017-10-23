@@ -7,10 +7,10 @@ Simple and easy to use library with Pull to refresh in Swift.
 #### Indicator Header
 
 ```swift
-scrollView.ref_setIndicatorHeader { [weak self] in
+tableView.ref_setIndicatorHeader { [weak self] in
 // [Th]: do network refresh request here
 // post or get request ,Do you want to remember after the request to end the refresh
-// code: self?.scrollView.ref_endRefreshing()
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
 ![image](https://github.com/pengpengCoder/Refresher/blob/master/Screenshots/indicator_header.gif)
@@ -18,10 +18,10 @@ scrollView.ref_setIndicatorHeader { [weak self] in
 #### Text Header
 
 ```swift
-scrollView.spr_setTextHeader { [weak self] in
+tableView.ref_setTextHeader { [weak self] in
 // [Th]: do network refresh request here
 // post or get request ,Do you want to remember after the request to end the refresh
-// code: self?.scrollView.ref_endRefreshing()
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
 
@@ -32,9 +32,10 @@ scrollView.spr_setTextHeader { [weak self] in
 #### GIF + Text Header
 
 ```swift
-scrollView.ref_setGIFTextHeader(data: data) { [weak self] in
-// do your action here
-// self?.scrollView.spr_endRefreshing()
+tableView.ref_setGIFTextHeader(data: data) { [weak self] in
+// [Th]: do network refresh request here
+// post or get request ,Do you want to remember after the request to end the refresh
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
 
@@ -46,21 +47,22 @@ scrollView.ref_setGIFTextHeader(data: data) { [weak self] in
 #### Indicator Footer
 
 ```swift
-scrollView.ref_setIndicatorFooter { [weak self] in
-// do your action here
-// self?.scrollView.spr_endRefreshing()
+tableView.ref_setIndicatorFooter { [weak self] in
+// [Th]: do network refresh request here
+// post or get request ,Do you want to remember after the request to end the refresh
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
 
 or
 
 ```swift
-scrollView.ref_setIndicatorAutoFooter { [weak self] in
-// do your action here
-// self?.scrollView.ref_endRefreshing()
+tableView.ref_setIndicatorAutoFooter { [weak self] in
+// [Th]: do network refresh request here
+// post or get request ,Do you want to remember after the request to end the refresh
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
-
 ![image](https://github.com/pengpengCoder/Refresher/blob/master/Screenshots/indicator_footer.gif)
 
 
@@ -68,18 +70,60 @@ scrollView.ref_setIndicatorAutoFooter { [weak self] in
 #### Text Footer
 
 ```swift
-scrollView.ref_setTextFooter { [weak self] in
-// do your action here
-// self?.scrollView.spr_endRefreshing()
+tableView.ref_setTextFooter { [weak self] in
+// [Th]: do network refresh request here
+// post or get request ,Do you want to remember after the request to end the refresh
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
 
 or
 
 ```swift
-scrollView.ref_setTextAutoFooter { [weak self] in
-// do your action here
-// self?.scrollView.ref_endRefreshing()
+tableView.ref_setTextAutoFooter { [weak self] in
+// [Th]: do network refresh request here
+// post or get request ,Do you want to remember after the request to end the refresh
+// code: self?.tableView.ref_endRefreshing()
 }
 ```
+![image](https://github.com/pengpengCoder/Refresher/blob/master/Screenshots/indicator_footer.gif)
+
+
+
+## Requirements
+
+* Xcode 7 or higher
+* iOS 8.0 or higher
+* Swift 3.0
+
+
+
+## Demo
+Open and run the Refresher project in Xcode to see Refresher in action.
+
+##Manual
+
+Add DGElasticPullToRefresh folder into your project.
+
+
+
+## Description
+end pull to refresh:
+
+```
+func ref_endRefreshing()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
