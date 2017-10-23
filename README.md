@@ -1,6 +1,8 @@
 # Refresher
 Simple and easy to use library with Pull to refresh in Swift.
 
+![image](https://github.com/pengpengCoder/Refresher/blob/master/Screenshots/indicator_header.gif)
+![image](https://github.com/pengpengCoder/Refresher/blob/master/Screenshots/indicator_header.gif)
 
 ## Example usage
 
@@ -101,9 +103,8 @@ tableView.ref_setTextAutoFooter { [weak self] in
 ## Demo
 Open and run the Refresher project in Xcode to see Refresher in action.
 
-##Manual
-
-Add DGElasticPullToRefresh folder into your project.
+## Manual
+Add Refresher folder into your project.
 
 
 
